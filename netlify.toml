@@ -1,0 +1,11 @@
+# Static site — no build step. Netlify just publishes the repo root.
+[build]
+  publish = "."
+  command = ""
+
+# Pretty URLs: allow /launch-package and /blog/ to resolve cleanly
+[[redirects]]
+  from = "/launch-package"
+  to = "/launch-package.html"
+  status = 301
+  force = false
