@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Take Payments for a Tote Rental Business (Stripe, Step by Step)</title>
+<meta name="description" content="A simple, no-jargon guide to taking online payments and deposits for your tote rental business with Stripe — setup, fees, deposits vs. full payment, and how to add it to your site.">
+<meta name="keywords" content="tote rental payments, stripe tote rental, take payments tote rental business, tote rental deposit, accept payments tote rental">
+<link rel="canonical" href="https://startatoterentalbusiness.com/blog/take-payments-stripe-tote-rental.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Take Payments for a Tote Rental Business (Stripe, Step by Step)">
+<meta property="og:description" content="Set up online deposits and payments for your tote rental business without a merchant headache.">
+<meta property="og:url" content="https://startatoterentalbusiness.com/blog/take-payments-stripe-tote-rental.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Take Payments for a Tote Rental Business (Stripe, Step by Step)","description":"A simple guide to taking online payments and deposits for your tote rental business with Stripe.","author":{"@type":"Organization","name":"Start a Tote Rental Business"},"publisher":{"@type":"Organization","name":"Start a Tote Rental Business","url":"https://startatoterentalbusiness.com"},"mainEntityOfPage":"https://startatoterentalbusiness.com/blog/take-payments-stripe-tote-rental.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://startatoterentalbusiness.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://startatoterentalbusiness.com/blog/"},{"@type":"ListItem","position":3,"name":"Take Payments with Stripe"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="/" aria-label="Start a Tote Rental Business home">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="5" y="12" width="30" height="22" rx="2" fill="#C9A227"/>
+        <rect x="5" y="12" width="30" height="6" rx="2" fill="#D9B948"/>
+        <rect x="15" y="7" width="10" height="5" rx="2" fill="#A88420"/>
+      </svg>
+      <span>TOTE RENTAL BUSINESS</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#inside">The Playbook</a>
+      <a href="/blog/">Guides</a>
+      <a href="/launch-package.html">Launch Package</a>
+      <a class="nav-cta" href="/launch-package.html#get-started">Get My Website</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap-narrow">
+  <p class="crumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Guides</a> &rsaquo; Take payments with Stripe</p>
+
+  <article class="article">
+    <span class="eyebrow">Payments · 6 min read</span>
+    <h1>How to Take Payments for a Tote Rental Business (Stripe, Step by Step)</h1>
+    <p class="meta">By Chelsea &amp; Justin Wade — this is the exact setup we use to collect deposits for our own tote rentals.</p>
+
+    <div class="prose">
+      <p>When you first start renting totes, cash and Venmo work fine. But two things happen as you grow: people no-show after you've held totes for them, and bigger customers (offices, real estate agents, event planners) expect to pay a real business like a real business. The fix for both is taking a card online, and the simplest tool for that is <strong>Stripe</strong>.</p>
+
+      <p>Here's how to set it up, what it costs, and how to actually use it so deposits stop your no-shows.</p>
+
+      <h2>Why Stripe (and not a "merchant account")</h2>
+      <p>Stripe is what most small businesses use to take cards online. There's no monthly fee, no contract, and no salesperson. You pay only when you get paid — currently about <strong>2.9% + 30¢</strong> per charge in the US. On a $40 deposit that's roughly $1.46. Money lands in your bank account a couple of business days later, automatically.</p>
+      <p>You don't need a website or any code to use it, either. Stripe lets you create a shareable "Payment Link" you can text, email, or post — and if you do have a site, you drop that same link on a button.</p>
+
+      <h2>Step 1: Create your account (about 15 minutes)</h2>
+      <ul>
+        <li>Go to stripe.com and sign up with your business email.</li>
+        <li>Enter your business details. If you're a sole proprietor, that's just your legal name and address — totally normal.</li>
+        <li>Add the bank account where you want your money to land. This is how Stripe pays you out.</li>
+        <li>Verify your identity (a photo of your ID). Stripe has to do this by law; it usually clears within a day.</li>
+      </ul>
+      <blockquote>Tip: use your business email (info@yourbusiness.com) when you sign up, not a personal one. It keeps your money stuff separate and looks right on receipts.</blockquote>
+
+      <h2>Step 2: Decide what you're charging for</h2>
+      <p>For tote rentals, you've got three clean options:</p>
+      <ul>
+        <li><strong>A deposit</strong> (our favorite) — charge $25 to $50 up front to lock in the booking, collect the rest on delivery. This is the single best way to kill no-shows.</li>
+        <li><strong>Full payment up front</strong> — simplest bookkeeping; some owners prefer it for short rentals.</li>
+        <li><strong>A flat "reservation fee"</strong> — a small nonrefundable charge that holds the totes and gets applied to the rental.</li>
+      </ul>
+      <p>You don't have to pick forever. Start with a deposit and adjust.</p>
+
+      <h2>Step 3: Make a Payment Link</h2>
+      <p>In your Stripe dashboard, go to <strong>Payment Links → Create</strong>. Name the product something clear like "Tote Rental Deposit," set the price, and hit create. Stripe gives you a link that looks like <em>buy.stripe.com/…</em></p>
+      <p>That one link is now your checkout. Text it to a customer, put it in your booking confirmation email, or — if you have a website — wire it to a "Pay Deposit" button.</p>
+
+      <div class="callout">
+        <h3>The quick version</h3>
+        <p>Sign up → add your bank → create a "Tote Rental Deposit" Payment Link → share it. That's a working checkout in well under an hour, with no monthly fee.</p>
+      </div>
+
+      <h2>Step 4: Connect it to your booking flow</h2>
+      <p>Payments work best when they're part of how people book, not a separate step. The flow we use: a customer fills out the booking form on the site, you reply to confirm the dates are open, and that reply includes the deposit link. They pay, the booking's locked, everybody relaxes.</p>
+      <p>If you'd rather not touch the technical side at all, this is exactly the kind of thing we set up for you (more on that below).</p>
+
+      <h2>A few honest gotchas</h2>
+      <ul>
+        <li><strong>Verification can lag.</strong> Don't sign up the morning of your first big booking. Give it a day to clear.</li>
+        <li><strong>Refunds are easy but final-ish.</strong> Decide your deposit/refund policy before you charge anyone, and put it in writing on your site.</li>
+        <li><strong>Fees are per charge.</strong> Build the ~3% into your pricing so it doesn't nibble your margin.</li>
+      </ul>
+
+      <div class="cta-inline">
+        <h3>Want us to set Stripe up for you?</h3>
+        <p>We'll configure your Stripe account, create your deposit link, and wire it into your site so payments just work. It's a $99 add-on to your tote rental website build.</p>
+        <a class="btn btn-big" href="/launch-package.html#whats-included">See the Launch Package</a>
+      </div>
+
+      <h2>Frequently asked</h2>
+      <h3>Do I need an LLC to use Stripe?</h3>
+      <p>No. You can use Stripe as a sole proprietor under your own name. An LLC is a separate decision about liability and taxes — talk to an accountant — but it's not required to start taking payments.</p>
+      <h3>How much does Stripe cost?</h3>
+      <p>No monthly fee. You pay about 2.9% + 30¢ per successful card charge in the US. If nobody pays you, you pay nothing.</p>
+      <h3>When do I get my money?</h3>
+      <p>Stripe deposits to your bank automatically, typically within a couple of business days of each charge. Your first payout can take a little longer while your account warms up.</p>
+      <h3>Can I take a deposit and the rest in cash?</h3>
+      <p>Absolutely, and a lot of tote owners do exactly that — deposit online to lock the booking, balance in cash or card on delivery.</p>
+    </div>
+  </article>
+
+  <p style="margin:2rem 0 4rem;"><a href="/blog/" style="color:var(--gold-dark);font-weight:600;text-decoration:none;">&larr; Back to all guides</a></p>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="5" y="12" width="30" height="22" rx="2" fill="#D4A020"/><rect x="5" y="12" width="30" height="6" rx="2" fill="#E8B830"/><rect x="15" y="7" width="10" height="5" rx="2" fill="#A07A10"/></svg><span>TOTE RENTAL BUSINESS</span></a>
+      <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Guides</a>
+        <a href="/launch-package.html">Launch Package</a>
+        <a href="mailto:justin@cowetatoterentals.com">Contact</a>
+      </div>
+    </div>
+    <p class="copy"><strong style="color:var(--gold);">Think Outside the "Cardboard" Box.</strong><br>&copy; <span id="year">2026</span> startatoterentalbusiness.com — Chelsea &amp; Justin Wade.</p>
+  </div>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Connect Your GoDaddy Domain to Your Tote Rental Website</title>
+<meta name="description" content="The step that stalls almost everyone — made simple. How to point a GoDaddy domain at your tote rental website using DNS records or nameservers, plus why it's worth doing right.">
+<meta name="keywords" content="connect godaddy domain, point domain to website, godaddy dns tote rental, custom domain tote rental website, connect domain to site">
+<link rel="canonical" href="https://startatoterentalbusiness.com/blog/connect-godaddy-domain-tote-rental-website.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Connect Your GoDaddy Domain to Your Tote Rental Website">
+<meta property="og:description" content="Point your GoDaddy domain at your tote rental site without the DNS headache.">
+<meta property="og:url" content="https://startatoterentalbusiness.com/blog/connect-godaddy-domain-tote-rental-website.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Connect Your GoDaddy Domain to Your Tote Rental Website","description":"How to point a GoDaddy domain at your tote rental website using DNS records or nameservers.","author":{"@type":"Organization","name":"Start a Tote Rental Business"},"publisher":{"@type":"Organization","name":"Start a Tote Rental Business","url":"https://startatoterentalbusiness.com"},"mainEntityOfPage":"https://startatoterentalbusiness.com/blog/connect-godaddy-domain-tote-rental-website.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://startatoterentalbusiness.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://startatoterentalbusiness.com/blog/"},{"@type":"ListItem","position":3,"name":"Connect a GoDaddy Domain"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="/" aria-label="Start a Tote Rental Business home">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="5" y="12" width="30" height="22" rx="2" fill="#C9A227"/>
+        <rect x="5" y="12" width="30" height="6" rx="2" fill="#D9B948"/>
+        <rect x="15" y="7" width="10" height="5" rx="2" fill="#A88420"/>
+      </svg>
+      <span>TOTE RENTAL BUSINESS</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#inside">The Playbook</a>
+      <a href="/blog/">Guides</a>
+      <a href="/launch-package.html">Launch Package</a>
+      <a class="nav-cta" href="/launch-package.html#get-started">Get My Website</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<div class="wrap-narrow">
+  <p class="crumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Guides</a> &rsaquo; Connect a GoDaddy domain</p>
+
+  <article class="article">
+    <span class="eyebrow">Domains · 6 min read</span>
+    <h1>How to Connect Your GoDaddy Domain to Your Tote Rental Website</h1>
+    <p class="meta">By Chelsea &amp; Justin Wade — the step that stalls almost everyone, explained in plain English.</p>
+
+    <div class="prose">
+      <p>You bought <em>yourbusiness.com</em>. You built (or got) a website. Now you need them to talk to each other so that typing your domain actually shows your site. That connection is called <strong>DNS</strong>, and it's the single step we see trip up the most new tote owners. It's not hard once you know what you're looking at. Here's the whole thing.</p>
+
+      <h2>First, why bother with a custom domain at all?</h2>
+      <p>Because <em>yourbusiness.com</em> looks like a real company and <em>yourbusiness.wixsite.com</em> looks like a hobby. Your own domain also lets you have a matching email (info@yourbusiness.com), it's easier to say out loud and put on a magnet or yard sign, and it's yours to keep no matter where your site is hosted. A domain runs about $12 to $20 a year — cheap credibility.</p>
+
+      <h2>The two ways to connect a domain</h2>
+      <p>Whatever built your site — Netlify, Squarespace, Wix, Shopify — gives you connection instructions. They'll be one of these two approaches:</p>
+      <h3>Option A: Update DNS records (most common)</h3>
+      <p>You keep your domain managed at GoDaddy and just point a couple of records at your host. Your host will tell you the exact values, usually:</p>
+      <ul>
+        <li>An <strong>A record</strong> pointing your root domain (yourbusiness.com) to an IP address, and/or</li>
+        <li>A <strong>CNAME record</strong> pointing "www" to your host's address.</li>
+      </ul>
+      <h3>Option B: Change your nameservers</h3>
+      <p>You hand DNS management to your host entirely by replacing GoDaddy's nameservers with theirs. Fewer moving parts afterward, but it moves all DNS control to the host. Your host will say if they prefer this.</p>
+      <p>You don't choose blindly — <strong>follow whichever one your host's setup screen tells you to use.</strong> They give you the exact values; you paste them in at GoDaddy.</p>
+
+      <h2>How to edit DNS at GoDaddy (Option A, step by step)</h2>
+      <ul>
+        <li>Log in to GoDaddy and open <strong>My Products → Domains</strong>.</li>
+        <li>Next to your domain, click the three dots and choose <strong>Manage DNS</strong>.</li>
+        <li>You'll see a list of records. To update the A record, find the one with Name <strong>@</strong> and Type <strong>A</strong>, click edit, and paste the IP address your host gave you.</li>
+        <li>For the CNAME, find or add a record with Name <strong>www</strong>, Type <strong>CNAME</strong>, and the value your host gave you.</li>
+        <li>Save each change. That's it on the GoDaddy side.</li>
+      </ul>
+      <blockquote>If a record you need already exists with a different value, edit it rather than adding a second one. Two conflicting records are the #1 reason a domain "won't connect."</blockquote>
+
+      <h2>Then you wait (this part is normal)</h2>
+      <p>DNS changes don't flip instantly. They "propagate" across the internet, which usually takes anywhere from a few minutes to a few hours (occasionally up to 48). If your site doesn't load right away, that's expected — give it some time before assuming something's broken. Your host will typically show a green checkmark once the connection is verified, and most of them add the free <strong>HTTPS</strong> padlock automatically once it's live.</p>
+
+      <div class="callout">
+        <h3>Already feeling the headache?</h3>
+        <p>Connecting your domain is included in our $199 website build — we do this exact step for you, paste the right records, and confirm your site is live and secure on your domain. No DNS screens for you to stare at.</p>
+      </div>
+
+      <h2>Common snags and quick fixes</h2>
+      <ul>
+        <li><strong>Site loads on www but not the bare domain (or vice versa)</strong> — you only set one of the two records. Add the other.</li>
+        <li><strong>"Not secure" warning</strong> — the HTTPS certificate hasn't issued yet. It usually appears within an hour of the domain verifying. Wait, then refresh.</li>
+        <li><strong>Old parked page still showing</strong> — a leftover GoDaddy forwarding or parked record is overriding yours. Remove it.</li>
+        <li><strong>Nothing after 48 hours</strong> — double-check the values match your host's screen exactly. One wrong character and it won't connect.</li>
+      </ul>
+
+      <div class="cta-inline">
+        <h3>Skip the DNS step entirely</h3>
+        <p>We'll connect your domain, set up your site, and confirm it's live and secure. $199 to build, then $25/month to host and maintain it. Most go live in 24 to 48 hours.</p>
+        <a class="btn btn-big" href="/launch-package.html#get-started">See the Launch Package</a>
+      </div>
+
+      <h2>Frequently asked</h2>
+      <h3>Do I have to move my domain away from GoDaddy?</h3>
+      <p>No. You can keep your domain registered at GoDaddy and simply point it at your site with DNS records. You never have to transfer it.</p>
+      <h3>What if I haven't bought a domain yet?</h3>
+      <p>Buy it first — GoDaddy, Namecheap, or Google all work. Pick something short and easy to say. Then come back and connect it. (If you order our build, we'll help you choose and connect one.)</p>
+      <h3>How long until my site is live after I change DNS?</h3>
+      <p>Often minutes, sometimes a few hours, and rarely up to 48. It's not instant, and that's normal — don't panic during the wait.</p>
+      <h3>Will my email break if I change DNS?</h3>
+      <p>It can, if you change nameservers and forget to re-add your email (MX) records. If you already have email on the domain, use the records method (Option A) and leave the MX records alone, or have whoever sets it up account for them.</p>
+    </div>
+  </article>
+
+  <p style="margin:2rem 0 4rem;"><a href="/blog/" style="color:var(--gold-dark);font-weight:600;text-decoration:none;">&larr; Back to all guides</a></p>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="5" y="12" width="30" height="22" rx="2" fill="#D4A020"/><rect x="5" y="12" width="30" height="6" rx="2" fill="#E8B830"/><rect x="15" y="7" width="10" height="5" rx="2" fill="#A07A10"/></svg><span>TOTE RENTAL BUSINESS</span></a>
+      <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Guides</a>
+        <a href="/launch-package.html">Launch Package</a>
+        <a href="mailto:justin@cowetatoterentals.com">Contact</a>
+      </div>
+    </div>
+    <p class="copy"><strong style="color:var(--gold);">Think Outside the "Cardboard" Box.</strong><br>&copy; <span id="year">2026</span> startatoterentalbusiness.com — Chelsea &amp; Justin Wade.</p>
+  </div>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
