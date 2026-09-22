@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Tote Rental Business Directory</title>
+<meta name="description" content="Add your tote rental business to the community directory — free for everyone who owns the Start a Tote Rental Business Playbook. No Google account needed.">
+<link rel="canonical" href="https://startatoterentalbusiness.com/directory/join/">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+.form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:2.2rem 2rem;box-shadow:0 8px 28px rgba(26,26,26,0.05);margin:2rem 0 4rem;}
+.form-card label{display:block;font-weight:600;font-size:.95rem;margin:1.3rem 0 .35rem;}
+.form-card label:first-of-type{margin-top:0;}
+.form-card .hint{font-size:.83rem;color:var(--gray);margin:-.1rem 0 .35rem;}
+.form-card input[type=text],.form-card input[type=email],.form-card input[type=url],.form-card textarea{width:100%;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:10px;font-family:'Inter',sans-serif;font-size:1rem;background:var(--cream);color:var(--black);}
+.form-card input:focus,.form-card textarea:focus{outline:none;border-color:var(--gold);background:#fff;}
+.form-card textarea{min-height:90px;resize:vertical;}
+.form-card input[type=file]{width:100%;padding:.6rem;border:1.5px dashed rgba(201,162,39,0.6);border-radius:10px;background:var(--light-gold);font-size:.9rem;}
+.req{color:var(--gold-dark);}
+.consent{display:flex;gap:.7rem;align-items:flex-start;margin:1.6rem 0;font-size:.95rem;}
+.consent input{margin-top:.3rem;width:1.1rem;height:1.1rem;accent-color:var(--gold);flex:none;}
+.form-card .btn{width:100%;justify-content:center;margin-top:.5rem;}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="/" aria-label="Start a Tote Rental Business home">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="5" y="12" width="30" height="22" rx="2" fill="#C9A227"/>
+        <rect x="5" y="12" width="30" height="6" rx="2" fill="#D9B948"/>
+        <rect x="15" y="7" width="10" height="5" rx="2" fill="#A88420"/>
+      </svg>
+      <span>TOTE RENTAL BUSINESS</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#inside">The Playbook</a>
+      <a href="/blog/">Guides</a>
+      <a href="/directory/">Directory</a>
+      <a class="nav-cta" href="/directory/">Back to Directory</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" style="padding-bottom:1rem;">
+  <div class="wrap-narrow">
+    <span class="eyebrow">Community Directory</span>
+    <h1>Add Your <span class="gold">Business.</span></h1>
+    <p class="sub">Free for everyone in the Start a Tote Rental Business community. Fill this out and you'll appear in the next monthly directory update — no Google account needed.</p>
+  </div>
+</header>
+
+<section style="padding-top:0;">
+  <div class="wrap-narrow">
+    <div class="form-card">
+      <form name="directory-join" method="POST" action="/directory/join/thanks/" enctype="multipart/form-data" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="directory-join">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="business">Business Name <span class="req">*</span></label>
+        <input type="text" id="business" name="business" required>
+
+        <label for="owner">Owner Name(s) <span class="req">*</span></label>
+        <input type="text" id="owner" name="owner" required>
+
+        <label for="email">Contact Email <span class="req">*</span></label>
+        <p class="hint">Only shown in the directory if you don't have a website or Facebook page.</p>
+        <input type="email" id="email" name="email" required>
+
+        <label for="purchase-email">Email you used when purchasing the playbook <span class="req">*</span></label>
+        <p class="hint">For verification only — this will never be displayed anywhere.</p>
+        <input type="email" id="purchase-email" name="purchase-email" required>
+
+        <label for="state">State <span class="req">*</span></label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="area">Cities/Counties Served <span class="req">*</span></label>
+        <p class="hint">And/or the city you're based in plus your mile radius.</p>
+        <textarea id="area" name="area" required></textarea>
+
+        <label for="website">Website <span style="font-weight:400;color:var(--gray);">(if you have one)</span></label>
+        <input type="text" id="website" name="website" placeholder="yourbusiness.com">
+
+        <label for="facebook">Facebook Business Page <span style="font-weight:400;color:var(--gray);">(if you have one)</span></label>
+        <input type="text" id="facebook" name="facebook" placeholder="facebook.com/yourbusiness">
+
+        <label for="logo">Upload Your Logo <span style="font-weight:400;color:var(--gray);">(optional)</span></label>
+        <p class="hint">PNG or JPG, under 8&nbsp;MB. You can also email it to justin@cowetatoterentals.com.</p>
+        <input type="file" id="logo" name="logo" accept="image/png,image/jpeg,image/webp">
+
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" value="Yes" required>
+          <label for="consent" style="margin:0;font-weight:500;">I give permission for this information (except my verification email) to be displayed publicly in the Start a Tote Rental Business Directory. <span class="req">*</span></label>
+        </div>
+
+        <button class="btn btn-big" type="submit">Add Me to the Directory</button>
+        <p class="hint" style="margin-top:1rem;text-align:center;">We add new members about once a month. Questions? justin@cowetatoterentals.com</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-inner">
+      <a class="logo" href="/"><svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="5" y="12" width="30" height="22" rx="2" fill="#D4A020"/><rect x="5" y="12" width="30" height="6" rx="2" fill="#E8B830"/><rect x="15" y="7" width="10" height="5" rx="2" fill="#A07A10"/></svg><span>TOTE RENTAL BUSINESS</span></a>
+      <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Guides</a>
+        <a href="/directory/">Directory</a>
+        <a href="/launch-package.html">Launch Package</a>
+        <a href="mailto:justin@cowetatoterentals.com">Contact</a>
+      </div>
+    </div>
+    <p class="copy"><strong style="color:var(--gold);">Think Outside the "Cardboard" Box.</strong><br>&copy; <span id="year">2026</span> startatoterentalbusiness.com — Chelsea &amp; Justin Wade.</p>
+  </div>
+</footer>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>20);});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
